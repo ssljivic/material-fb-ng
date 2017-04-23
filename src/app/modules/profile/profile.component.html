@@ -1,0 +1,19 @@
+<md-card>
+  <md-card-title>Profile</md-card-title>
+
+  <md-card-content>
+    <form>
+      <md-input-container>
+        <input mdInput placeholder="First name" type="text" name="firstName" [(ngModel)]="profile.firstName" required >
+      </md-input-container>
+
+      <md-input-container>
+        <input mdInput type="text" id="lastName" name="lastName" placeholder="Last name" [(ngModel)]="profile.lastName" required>
+      </md-input-container>
+
+      <button type="submit" md-raised-button color="primary">Submit</button>
+    </form>
+
+    <button md-raised-button [routerLink]="'/auth'">Auth page</button>
+  </md-card-content>
+</md-card>
